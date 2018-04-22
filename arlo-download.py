@@ -217,7 +217,8 @@ try:
 	# If we made it here without an exception, then the videos were successfully deleted.
 	print('Batch deletion of videos for DATE' + folder_day7 + 'completed successfully.')
 
-
+	arlo.Logout()
+	print('Logged out')
 
 	# Rename files with replacing arlo device unique ID with its name
 
@@ -298,6 +299,8 @@ try:
     
 	for filename in filenames_day7:
 		os.rename(path_day7 + '/' + filename, path_day7 + '/' + filename.replace("300-5293895_4CD365S91B43C", "play-yard"))
+
+	print('All arlo video files renamed successfully.')
 
 except Exception as e:
     print(e)
