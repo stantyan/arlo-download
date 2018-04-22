@@ -74,10 +74,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day1)
+	result = arlo.BatchDeleteRecordings(library_day1)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day1 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day1 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day2 = arlo.GetLibrary(download_day2, download_day2)
@@ -97,10 +97,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day2)
+	result = arlo.BatchDeleteRecordings(library_day2)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day2 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day2 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day3 = arlo.GetLibrary(download_day3, download_day3)
@@ -120,10 +120,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day3)
+	result = arlo.BatchDeleteRecordings(library_day3)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day3 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day3 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day4 = arlo.GetLibrary(download_day4, download_day4)
@@ -143,10 +143,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day4)
+	result = arlo.BatchDeleteRecordings(library_day4)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day4 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day4 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day5 = arlo.GetLibrary(download_day5, download_day5)
@@ -166,10 +166,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day5)
+	result = arlo.BatchDeleteRecordings(library_day5)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day5 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day5 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day6 = arlo.GetLibrary(download_day6, download_day6)
@@ -189,10 +189,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day6)
+	result = arlo.BatchDeleteRecordings(library_day6)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day6 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day6 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day7 = arlo.GetLibrary(download_day7, download_day7)
@@ -212,10 +212,10 @@ try:
 		print('Downloaded video '+videofilename+' from '+recording['createdDate']+'.')
 
 	# Delete all of the videos you just downloaded from the Arlo library.
-	# result = arlo.BatchDeleteRecordings(library_day7)
+	result = arlo.BatchDeleteRecordings(library_day7)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	# print('Batch deletion of videos for DATE' + folder_day7 + 'completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day7 + 'completed successfully.')
 
 
 
