@@ -9,6 +9,7 @@ sudo nano /home/arlo/arlo/arlo-cron.sh
 
 :: and insert the following code::
 
+
 #!/bin/bash
 PATH=/home/arlo/anaconda3/bin
 python /home/arlo/arlo/arlo.py
@@ -17,12 +18,15 @@ echo "Arlo daily backup is completed"
 
 
 ::grant executable permissions::
+
 sudo chmod +x /home/arlo/arlo/arlo-cron.sh
 
 
 ::edit cron jobs file::
+
 sudo crontab -e
 
 
 :: and insert the following job::
+
 0 15 * * * /home/arlo/arlo/arlo-cron.sh
