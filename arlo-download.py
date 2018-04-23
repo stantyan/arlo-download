@@ -22,13 +22,13 @@ folder_day4 = (date.today()-timedelta(days=4)).strftime("%Y-%m-%d")
 folder_day3 = (date.today()-timedelta(days=5)).strftime("%Y-%m-%d")
 folder_day2 = (date.today()-timedelta(days=6)).strftime("%Y-%m-%d")
 folder_day1 = (date.today()-timedelta(days=7)).strftime("%Y-%m-%d")
-createFolder('./library/' + folder_day1 + '/')
-createFolder('./library/' + folder_day2 + '/')
-createFolder('./library/' + folder_day3 + '/')
-createFolder('./library/' + folder_day4 + '/')
-createFolder('./library/' + folder_day5 + '/')
-createFolder('./library/' + folder_day6 + '/')
-createFolder('./library/' + folder_day7 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day1 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day2 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day3 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day4 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day5 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day6 + '/')
+createFolder('/home/arlo/arlo/library/' + folder_day7 + '/')
 
 
 
@@ -66,7 +66,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day1 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day1 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -77,7 +77,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day1)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day1 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day1 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day2 = arlo.GetLibrary(download_day2, download_day2)
@@ -89,7 +89,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day2 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day2 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -100,7 +100,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day2)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day2 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day2 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day3 = arlo.GetLibrary(download_day3, download_day3)
@@ -112,7 +112,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day3 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day3 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -123,7 +123,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day3)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day3 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day3 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day4 = arlo.GetLibrary(download_day4, download_day4)
@@ -135,7 +135,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day4 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day4 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -146,7 +146,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day4)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day4 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day4 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day5 = arlo.GetLibrary(download_day5, download_day5)
@@ -158,7 +158,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day5 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day5 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -169,7 +169,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day5)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day5 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day5 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day6 = arlo.GetLibrary(download_day6, download_day6)
@@ -181,7 +181,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day6 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day6 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -192,7 +192,7 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day6)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day6 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day6 + 'completed successfully.')
 
 	# Get all of the recordings for specific day.
 	library_day7 = arlo.GetLibrary(download_day7, download_day7)
@@ -204,7 +204,7 @@ try:
 		
 		# Get video as a chunked stream; this function returns a generator.
 		stream = arlo.StreamRecording(recording['presignedContentUrl'])
-		with open('library/'+ folder_day7 + '/' + videofilename, 'wb') as f:
+		with open('/home/arlo/arlo/library/'+ folder_day7 + '/' + videofilename, 'wb') as f:
 			for chunk in stream:
 				f.write(chunk)
 			f.close()
@@ -215,20 +215,20 @@ try:
 	result = arlo.BatchDeleteRecordings(library_day7)
 
 	# If we made it here without an exception, then the videos were successfully deleted.
-	print('Batch deletion of videos for DATE ' + folder_day7 + ' completed successfully.')
+	print('Batch deletion of videos for DATE' + folder_day7 + 'completed successfully.')
 
 	arlo.Logout()
 	print('Logged out')
 
 	# Rename files with replacing arlo device unique ID with its name
 
-	path_day1 =  os.getcwd() + '/library/' + folder_day1
-	path_day2 =  os.getcwd() + '/library/' + folder_day2
-	path_day3 =  os.getcwd() + '/library/' + folder_day3
-	path_day4 =  os.getcwd() + '/library/' + folder_day4
-	path_day5 =  os.getcwd() + '/library/' + folder_day5
-	path_day6 =  os.getcwd() + '/library/' + folder_day6
-	path_day7 =  os.getcwd() + '/library/' + folder_day7
+	path_day1 =  '/home/arlo/arlo/library/' + folder_day1
+	path_day2 =  '/home/arlo/arlo/library/' + folder_day2
+	path_day3 =  '/home/arlo/arlo/library/' + folder_day3
+	path_day4 =  '/home/arlo/arlo/library/' + folder_day4
+	path_day5 =  '/home/arlo/arlo/library/' + folder_day5
+	path_day6 =  '/home/arlo/arlo/library/' + folder_day6
+	path_day7 =  '/home/arlo/arlo/library/' + folder_day7
 
 	filenames_day1 = os.listdir(path_day1)
 
